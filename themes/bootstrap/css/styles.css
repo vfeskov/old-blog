@@ -18,3 +18,34 @@
 .status-list .date {
     font-size:12px;
 }
+#footer {
+    text-align: center;
+}
+div.captcha {
+    margin-top:10px;
+}
+.help-block{
+    font-size:12px;
+}
+.contacts {
+    overflow:hidden;
+    padding:0 0 0 40px;
+    margin: 0 0 50px;
+}
+.contacts li{
+    margin-right:20px;
+}
+.contacts a {
+    background: url('../images/skype_logo.png') no-repeat left center;
+    height:40px;
+    padding: 0 0 0 100px;
+    display:block;
+    line-height:40px;
+}
+.contacts a.email {
+    background: url('../images/email-love.png') no-repeat left center;
+    padding-left:50px;
+}
+.contacts a.linkedin {
+    background: url('../images/linkedin_logo.jpg') no-repeat left center;
+}

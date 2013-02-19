@@ -427,3 +427,11 @@ REQUEST_URI=/index.php
 in Z:\home\vladimirfeskov.com.local\www\protected\views\site\index.php (18)
 in Z:\home\vladimirfeskov.com.local\www\protected\controllers\SiteController.php (33)
 in Z:\home\vladimirfeskov.com.local\www\index.php (12)
+2013/02/20 00:01:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "contact".' in Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php(141): CWebApplication->runController('contact')
+#1 Z:\home\vladimirfeskov.com.local\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\vladimirfeskov.com.local\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/?r=contact
+---

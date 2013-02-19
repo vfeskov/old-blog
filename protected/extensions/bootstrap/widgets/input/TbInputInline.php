@@ -58,4 +58,18 @@ class TbInputInline extends TbInputVertical
 		echo $this->form->textField($this->model, $this->attribute, $this->htmlOptions);
 		echo $this->getAppend();
 	}
+
+    /**
+     * Renders a CAPTCHA.
+     * @return string the rendered content
+     */
+    protected function captcha()
+    {
+        echo '<div class="captcha">';
+        echo '<div class="widget">'.$this->widget('CCaptcha', $this->captchaOptions, true).'</div>';
+        $this->htmlOptions['placeholder'] = $this->model->getAttributeLabel($this->attribute);
+        echo $this->form->textField($this->model, $this->attribute, $this->htmlOptions);
+        echo $this->getError().$this->getHint();
+        echo '</div>';
+    }
 }
