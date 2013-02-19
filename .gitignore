@@ -2,3 +2,5 @@
 ./protected/config/console.php
 ./protected/config/test.php
 ./assets/*
+./protected/runtime/*
+./demos/*
