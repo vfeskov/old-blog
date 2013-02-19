@@ -1,5 +1,5 @@
 <?php
-
+date_default_timezone_set('EET');
 Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
 
 // This is the main Web application configuration. Any writable
@@ -53,6 +53,7 @@ return array(
             'username'=>'root',
             'password'=>'',
             'emulatePrepare' => true,
+            'initSQLs'=>array("set time_zone='+02:00';"),
         ),
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
