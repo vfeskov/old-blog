@@ -28,4 +28,6 @@ class TbListView extends CListView
 	 * Defaults to false, meaning that no CSS will be included.
 	 */
 	public $cssFile = false;
+
+
 }
