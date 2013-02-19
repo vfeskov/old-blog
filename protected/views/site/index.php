@@ -8,7 +8,7 @@ $this->pageTitle=Yii::app()->name;
     'heading'=>'Welcome',
 )); ?>
 
-<p>I'm a web-developer from Ukraine. The site is under construction, you can find short updates below.</p>
+<p>I'm a web developer from Ukraine. The site is under construction, you can find short updates below.</p>
 
 <?php $this->endWidget(); ?>
 
