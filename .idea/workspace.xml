@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2b7d19c-0161-4f79-b644-e96e458a83d7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/contact.php" afterPath="$PROJECT_DIR$/protected/views/site/contact.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap/images/email-love.png" afterPath="$PROJECT_DIR$/themes/bootstrap/images/email-love.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap/images/linkedin_logo.jpg" afterPath="$PROJECT_DIR$/themes/bootstrap/images/linkedin_logo.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap/css/styles.css" afterPath="$PROJECT_DIR$/themes/bootstrap/css/styles.css" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="styles.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="styles.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="22" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0">
+            <state line="36" column="20" selection-start="536" selection-end="536" vertical-scroll-proportion="0.6689576">
               <folding />
             </state>
           </provider>
@@ -42,10 +44,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="contact.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/site/contact.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="56" selection-start="1462" selection-end="1462" vertical-scroll-proportion="0.57194245">
+            <state line="48" column="56" selection-start="1462" selection-end="1462" vertical-scroll-proportion="-18.346153">
               <folding />
             </state>
           </provider>
@@ -142,9 +144,9 @@
         <option value="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/input/TbInputVertical.php" />
         <option value="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/input/TbInputInline.php" />
         <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
-        <option value="$PROJECT_DIR$/themes/bootstrap/css/styles.css" />
         <option value="$PROJECT_DIR$/protected/views/site/index.php" />
         <option value="$PROJECT_DIR$/protected/views/site/contact.php" />
+        <option value="$PROJECT_DIR$/themes/bootstrap/css/styles.css" />
       </list>
     </option>
   </component>
@@ -706,13 +708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="22" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="29" selection-start="529" selection-end="529" vertical-scroll-proportion="-11.115385">
@@ -729,7 +724,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/site/contact.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="56" selection-start="1462" selection-end="1462" vertical-scroll-proportion="0.57194245">
+        <state line="48" column="56" selection-start="1462" selection-end="1462" vertical-scroll-proportion="-18.346153">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="20" selection-start="536" selection-end="536" vertical-scroll-proportion="0.6689576">
           <folding />
         </state>
       </provider>
