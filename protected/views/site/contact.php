@@ -9,7 +9,7 @@ $this->breadcrumbs=array(
 );
 ?>
 
-<h1>My contact info</h1>
+<h1>How to contact me</h1>
 
 <ul class="contacts">
     <li><a class="skype" href='skype:vfeskov1' title="Skype me">vfeskov1</a></li>
@@ -41,14 +41,12 @@ $this->breadcrumbs=array(
 
 	<?php echo $form->errorSummary($model); ?>
 
-    <p>You can write me something right here and right now</p>
+    <p>You can write me something right here. Please don't forget to include your contact info, if you want a response.</p>
 
     <?php echo $form->textAreaRow($model,'body',array('rows'=>6, 'class'=>'span6')); ?>
 
 	<?php if(CCaptcha::checkRequirements()): ?>
-		<?php echo $form->captchaRow($model,'verifyCode',array(
-            'hint'=>'Please enter the letters as they are shown in the image above.<br/>Letters are not case-sensitive.',
-        )); ?>
+		<?php echo $form->captchaRow($model,'verifyCode'); ?>
 	<?php endif; ?>
 
 	<div class="form-actions">
