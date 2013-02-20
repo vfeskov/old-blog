@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2b7d19c-0161-4f79-b644-e96e458a83d7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/index.php" afterPath="$PROJECT_DIR$/protected/views/site/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/contact.php" afterPath="$PROJECT_DIR$/protected/views/site/contact.php" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,19 +42,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="contact.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/views/site/contact.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="58" selection-start="1209" selection-end="1209" vertical-scroll-proportion="-22.23077">
+            <state line="48" column="56" selection-start="1462" selection-end="1462" vertical-scroll-proportion="0.57194245">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="153" selection-start="328" selection-end="328" vertical-scroll-proportion="0.20383693">
+            <state line="17" column="29" selection-start="529" selection-end="529" vertical-scroll-proportion="-11.115385">
               <folding />
             </state>
           </provider>
@@ -63,7 +63,7 @@
       <file leaf-file-name="TbInputVertical.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/extensions/bootstrap/widgets/input/TbInputVertical.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="157" column="5" selection-start="3791" selection-end="4186" vertical-scroll-proportion="-20.88">
+            <state line="157" column="5" selection-start="3791" selection-end="4186" vertical-scroll-proportion="-21.0">
               <folding />
             </state>
           </provider>
@@ -143,8 +143,8 @@
         <option value="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/input/TbInputInline.php" />
         <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap/css/styles.css" />
-        <option value="$PROJECT_DIR$/protected/views/site/contact.php" />
         <option value="$PROJECT_DIR$/protected/views/site/index.php" />
+        <option value="$PROJECT_DIR$/protected/views/site/contact.php" />
       </list>
     </option>
   </component>
@@ -685,13 +685,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/extensions/bootstrap/widgets/input/TbInputVertical.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="157" column="5" selection-start="3791" selection-end="4186" vertical-scroll-proportion="-20.88">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/extensions/bootstrap/widgets/input/TbInputInline.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="67" column="13" selection-start="1812" selection-end="1812" vertical-scroll-proportion="-23.6">
@@ -706,20 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="22" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/site/contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="58" selection-start="1209" selection-end="1209" vertical-scroll-proportion="-22.23077">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="10" selection-start="1110" selection-end="1110" vertical-scroll-proportion="-16.884615">
@@ -727,9 +706,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="22" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="153" selection-start="328" selection-end="328" vertical-scroll-proportion="0.20383693">
+        <state line="17" column="29" selection-start="529" selection-end="529" vertical-scroll-proportion="-11.115385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/extensions/bootstrap/widgets/input/TbInputVertical.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="157" column="5" selection-start="3791" selection-end="4186" vertical-scroll-proportion="-21.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="56" selection-start="1462" selection-end="1462" vertical-scroll-proportion="0.57194245">
           <folding />
         </state>
       </provider>
