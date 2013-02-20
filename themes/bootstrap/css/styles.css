@@ -29,23 +29,24 @@ div.captcha {
 }
 .contacts {
     overflow:hidden;
-    padding:0 0 0 40px;
-    margin: 0 0 50px;
+    margin: 30px 0 50px;
+    list-style: none;
 }
 .contacts li{
-    margin-right:20px;
+    margin-bottom:20px;
+    overflow:hidden;
 }
 .contacts a {
-    background: url('../images/skype_logo.png') no-repeat left center;
-    height:40px;
-    padding: 0 0 0 100px;
+    background: url('../images/skype-logo.jpg') no-repeat left top;
+    height:30px;
+    padding: 0 0 0 34px;
+    line-height: 30px;
     display:block;
-    line-height:40px;
+    float:left;
 }
 .contacts a.email {
-    background: url('../images/email-love.png') no-repeat left center;
-    padding-left:50px;
+    background: url('../images/email-love.png') no-repeat left top;
 }
 .contacts a.linkedin {
-    background: url('../images/linkedin_logo.jpg') no-repeat left center;
+    background: url('../images/linkedin_logo.jpg') no-repeat left top;
 }
