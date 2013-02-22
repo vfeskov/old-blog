@@ -36,7 +36,7 @@ $this->breadcrumbs=array(
 
 	<?php echo $form->errorSummary($model); ?>
 
-    <p>You can write me something right here. Please don't forget to include your contact info if you want a response.</p>
+    <p>You can write me something right here. Please include your contact info if you want a response.</p>
 
     <?php echo $form->textAreaRow($model,'body',array('rows'=>6, 'class'=>'span6')); ?>
 
