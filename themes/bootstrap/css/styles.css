@@ -37,7 +37,7 @@ div.captcha {
     overflow:hidden;
 }
 .contacts a {
-    background: url('../images/skype-logo.jpg') no-repeat left top;
+    background: url('../images/skype-orange.jpg') no-repeat left top;
     height:30px;
     padding: 0 0 0 34px;
     line-height: 30px;
@@ -45,8 +45,8 @@ div.captcha {
     float:left;
 }
 .contacts a.email {
-    background: url('../images/email-love.png') no-repeat left top;
+    background: url('../images/email-orange.png') no-repeat left top;
 }
 .contacts a.linkedin {
-    background: url('../images/linkedin_logo.jpg') no-repeat left top;
+    background: url('../images/linkedin-orange.jpg') no-repeat left top;
 }
