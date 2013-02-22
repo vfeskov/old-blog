@@ -48,7 +48,7 @@ class CCaptchaAction extends CAction
 	 * @var integer how many times should the same CAPTCHA be displayed. Defaults to 3.
 	 * A value less than or equal to 0 means the test is unlimited (available since version 1.1.2).
 	 */
-	public $testLimit = 3;
+	public $testLimit = 1;
 	/**
 	 * @var integer the width of the generated CAPTCHA image. Defaults to 120.
 	 */
@@ -68,9 +68,9 @@ class CCaptchaAction extends CAction
 	public $backColor = 0xFFFFFF;
 	/**
 	 * @var integer the font color. For example, 0x55FF00. Defaults to 0x2040A0 (blue color).
-	 */
-	public $foreColor = 0x2040A0;
-	/**
+     */
+    public $foreColor = 0xF33B04;
+    /**
 	 * @var boolean whether to use transparent background. Defaults to false.
 	 */
 	public $transparent = false;
@@ -127,7 +127,8 @@ class CCaptchaAction extends CAction
 			));
 		}
 		else
-			$this->renderImage($this->getVerifyCode());
+            $this->renderImage($this->getVerifyCode());
+
 		Yii::app()->end();
 	}
 
@@ -179,7 +180,7 @@ class CCaptchaAction extends CAction
 		$session->open();
 		$name = $this->getSessionKey() . 'count';
 		$session[$name] = $session[$name] + 1;
-		if($session[$name] > $this->testLimit && $this->testLimit > 0)
+        if($session[$name] > $this->testLimit && $this->testLimit > 0)
 			$this->getVerifyCode(true);
 		return $valid;
 	}

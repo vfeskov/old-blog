@@ -17,7 +17,7 @@ $this->breadcrumbs=array(
 
 <?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 	'id'=>'login-form',
-    'type'=>'horizontal',
+    'type'=>'vertical',
 	'enableClientValidation'=>true,
 	'clientOptions'=>array(
 		'validateOnSubmit'=>true,
@@ -28,9 +28,7 @@ $this->breadcrumbs=array(
 
 	<?php echo $form->textFieldRow($model,'username'); ?>
 
-	<?php echo $form->passwordFieldRow($model,'password',array(
-        'hint'=>'Hint: You may login with <kbd>demo</kbd>/<kbd>demo</kbd> or <kbd>admin</kbd>/<kbd>admin</kbd>',
-    )); ?>
+	<?php echo $form->passwordFieldRow($model,'password'); ?>
 
 	<?php echo $form->checkBoxRow($model,'rememberMe'); ?>
 

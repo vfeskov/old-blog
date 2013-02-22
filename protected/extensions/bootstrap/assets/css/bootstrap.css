@@ -3372,7 +3372,7 @@ input[type="button"].btn-block {
 
 .btn-warning:active,
 .btn-warning.active {
-  background-color: #c67605 \9;
+  background-color: #c67605;
 }
 
 .btn-danger {
