@@ -76,3 +76,9 @@ div.captcha {
         margin-top:0;
     }
 }
+.hero-unit {
+    padding:30px;
+}
+.hero-unit h1 {
+    color: #ea4a0c;
+}
