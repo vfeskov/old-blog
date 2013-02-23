@@ -4,6 +4,9 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content="en" />
+    <link rel="icon"
+          type="image/png"
+          href="<?php echo Yii::app()->theme->baseUrl; ?>/images/favicon.png">
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 
