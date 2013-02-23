@@ -11,6 +11,8 @@ $this->breadcrumbs=array(
 
 <h1>Contact me</h1>
 
+<p>I'm usually online from 1 PM to 1 AM EET, but you can leave me a message at anytime.</p>
+
 <?php require(dirname(__FILE__).'/contacts.php')?>
 
 <?php if(Yii::app()->user->hasFlash('contact')): ?>

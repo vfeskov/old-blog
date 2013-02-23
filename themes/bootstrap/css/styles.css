@@ -79,6 +79,12 @@ div.captcha {
 .hero-unit {
     padding:30px;
 }
+h1,
 .hero-unit h1 {
     color: #ea4a0c;
+}
+.navbar .brand {
+    background: url('../images/logo.png') no-repeat;
+    padding-left:48px;
+    height:18px;
 }
