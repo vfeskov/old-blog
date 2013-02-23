@@ -5,7 +5,7 @@ $this->pageTitle=Yii::app()->name;
 ?>
 
 <?php $this->beginWidget('bootstrap.widgets.TbHeroUnit',array(
-    'heading'=>'Hi!',
+    'heading'=>'Hi there!',
 )); ?>
 
 <p>My name is Vladimir Feskov and I'm a web developer from Ukraine. This site is dedicated to my work.<br/>

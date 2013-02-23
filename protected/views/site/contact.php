@@ -3,13 +3,13 @@
 /* @var $model ContactForm */
 /* @var $form TbActiveForm */
 
-$this->pageTitle=Yii::app()->name . ' - Contact Us';
+$this->pageTitle=Yii::app()->name . ' - Contact me';
 $this->breadcrumbs=array(
 	'Contact',
 );
 ?>
 
-<h1>How to contact me</h1>
+<h1>Contact me</h1>
 
 <?php require(dirname(__FILE__).'/contacts.php')?>
 
