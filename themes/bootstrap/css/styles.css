@@ -1,9 +1,6 @@
 #page {
     margin-top:60px;
 }
-.navbar .nav {
-    float:right;
-}
 .status-list .summary{
     display:none;
 }
@@ -83,4 +80,5 @@ div.captcha {
     background: url('../images/logo.png') no-repeat;
     padding-left:48px;
     height:18px;
+    margin-left:5px;
 }
