@@ -85,10 +85,12 @@ class SiteController extends Controller
                 $time2 = microtime(true);
                 $text .= "mail(...) --- ".($time2-$time1)."\n";
 
-                var_dump($text);
+                $fp = fopen(dirname(dirname(dirname(__FILE__))).'/assets/log.log', 'w');
+                fwrite($fp, $text);
+                fclose($fp);
 
 				Yii::app()->user->setFlash('contact','Thanks, I\'ll reply to you when I get a chance.');
-				//$this->refresh();
+				$this->refresh();
 			}
 		}
 		$this->render('contact',array('model'=>$model));
