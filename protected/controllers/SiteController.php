@@ -62,19 +62,33 @@ class SiteController extends Controller
 	 */
 	public function actionContact()
 	{
-		$model=new ContactForm;
+		$time1 = microtime(true);
+        $model=new ContactForm;
+        $time2 = microtime(true);
+        $text = "new ContactForm --- ".($time2-$time1)."\n";
 		if(isset($_POST['ContactForm']))
 		{
 			$model->attributes=$_POST['ContactForm'];
 			if($model->validate())
 			{
-				$name='VladimirFeskov.com Robot';
+                $time1=$time2;
+                $time2 = microtime(true);
+                $text .= "\$model->validate --- ".($time2-$time1)."\n";
+                $name='VladimirFeskov.com Robot';
 				$subject='Someone submitted something on the site';
 				$headers="From: $name <robot@vladimirfeskov.com>\r\n".
 					"MIME-Version: 1.0\r\n".
 					"Content-type: text/plain; charset=UTF-8";
 
 				mail(Yii::app()->params['adminEmail'],$subject,$model->body,$headers);
+                $time1=$time2;
+                $time2 = microtime(true);
+                $text .= "mail(...) --- ".($time2-$time1)."\n";
+
+                $fp = fopen(dirname(__FILE__).'/log.log', 'w');
+                fwrite($fp, $text);
+                fclose($fp);
+
 				Yii::app()->user->setFlash('contact','Thanks, I\'ll reply to you when I get a chance.');
 				$this->refresh();
 			}
