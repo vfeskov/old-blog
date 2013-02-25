@@ -18,9 +18,12 @@
 <body>
 
 <?php $this->widget('bootstrap.widgets.TbNavbar',array(
+    'type'=>'inverse',
+    'collapse'=>true,
     'items'=>array(
         array(
             'class'=>'bootstrap.widgets.TbMenu',
+            'htmlOptions'=>array('class'=>'pull-right'),
             'items'=>array(
                 array('label'=>'Contact', 'url'=>array('/site/contact')),
                 array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
