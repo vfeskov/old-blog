@@ -127,14 +127,6 @@ class SiteController extends Controller
         $this->render('workhistory',array('dataProvider'=>$dataProvider));
     }
 
-    /**
-     * Updates positions table with data from LinkedIn
-     */
-    public function actionUpdatePositions()
-    {
-
-    }
-
 	/**
 	 * Displays the login page
 	 */
