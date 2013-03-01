@@ -6,7 +6,7 @@ Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'Vladimir\'s',
+	'name'=>'Vladimir Feskov',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -79,5 +79,9 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'v@vladimirfeskov.com',
+        'linkedinAppKey'=>'g5i3dfr3k9qm',
+        'linkedinAppSecret'=>'w4hZWg0TDUxm6bfn',
+        'linkedinOauthToken' => '344936cf-e0cb-42b2-9e09-85d2268bff1e',
+        'linkedinOauthTokenSecret' => 'ba67c7cb-1683-43cb-b6b1-770eadedb0e4'
 	),
 );

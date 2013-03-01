@@ -83,6 +83,58 @@ class SiteController extends Controller
 		$this->render('contact',array('model'=>$model));
 	}
 
+    /**
+     * Displays the positions page
+     */
+    public function actionWorkhistory()
+    {
+        if(isset($_GET['update']) && !Yii::app()->user->isGuest)
+        {
+            $linkedin = new LinkedIn(array(
+                'appKey'       =>  Yii::app()->params['linkedinAppKey'],
+                'appSecret'    => Yii::app()->params['linkedinAppSecret']
+            ));
+            $linkedin->setTokenAccess(array(
+                'oauth_token' => Yii::app()->params['linkedinOauthToken'],
+                'oauth_token_secret' => Yii::app()->params['linkedinOauthTokenSecret']
+            ));
+            $linkedin->setResponseFormat(LINKEDIN::_RESPONSE_JSON);
+            $positions = $linkedin->profile('~:(positions)');
+            $positions = json_decode($positions['linkedin'])->positions->values;
+
+            $model = new Position();
+            $model->deleteAll('1=1');
+            $successfullyInserted = 0;
+            foreach($positions as $position)
+            {
+                $model->attributes=array(
+                    'title'=>$position->title,
+                    'summary'=>$position->summary,
+                    'startdate'=>$position->startDate->year.'-'.(($position->startDate->month < 10) ? '0'.$position->startDate->month : $position->startDate->month),
+                    'enddate'=>($position->endDate) ? ($position->endDate->year.'-'.(($position->endDate->month < 10) ? '0'.$position->endDate->month : $position->endDate->month)) : '',
+                    'companyname'=>$position->company->name,
+                    'companysize'=>$position->company->size,
+                    'companyindustry'=>$position->company->industry,
+                );
+                $model->setPrimaryKey(null);
+                $model->setIsNewRecord(true);
+                if($model->insert())$successfullyInserted++;
+            }
+            Yii::app()->user->setFlash('positions',"$successfullyInserted out of ".count($positions)." positions added to the db.");
+            $this->redirect($this->createUrl('/site/workhistory'));
+        }
+        $dataProvider = new CActiveDataProvider('Position');
+        $this->render('workhistory',array('dataProvider'=>$dataProvider));
+    }
+
+    /**
+     * Updates positions table with data from LinkedIn
+     */
+    public function actionUpdatePositions()
+    {
+
+    }
+
 	/**
 	 * Displays the login page
 	 */
@@ -103,7 +155,9 @@ class SiteController extends Controller
 			$model->attributes=$_POST['LoginForm'];
 			// validate user input and redirect to the previous page if valid
 			if($model->validate() && $model->login())
-				$this->redirect(Yii::app()->user->returnUrl);
+            {
+                $this->redirect(Yii::app()->user->returnUrl);
+            }
 		}
 		// display the login form
 		$this->render('login',array('model'=>$model));
@@ -114,7 +168,7 @@ class SiteController extends Controller
 	 */
 	public function actionLogout()
 	{
-		Yii::app()->user->logout();
+        Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
 }
