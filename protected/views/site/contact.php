@@ -7,23 +7,23 @@ $this->pageTitle=Yii::app()->name . ' - Contact me';
 $this->breadcrumbs=array(
 	'Contact',
 );
+$hasFlash = Yii::app()->user->hasFlash('contact');
+
 ?>
 
 <h1>Contact me</h1>
+
+<?php if($hasFlash) {
+    $this->widget('bootstrap.widgets.TbAlert', array(
+        'alerts'=>array('contact'),
+    ));
+}?>
 
 <p>I'm usually online from 1 PM to 1 AM EET, but you can leave me a message at anytime.</p>
 
 <?php require(dirname(__FILE__).'/contacts.php')?>
 
-<?php if(Yii::app()->user->hasFlash('contact')): ?>
-
-    <?php $this->widget('bootstrap.widgets.TbAlert', array(
-        'alerts'=>array('contact'),
-    )); ?>
-
-<?php else: ?>
-
-
+<?php if(!$hasFlash): ?>
 
 <div class="form">
 

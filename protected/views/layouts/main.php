@@ -16,17 +16,14 @@
 </head>
 
 <body>
-
 <?php $this->widget('bootstrap.widgets.TbNavbar',array(
-    'type'=>'inverse',
     'collapse'=>true,
     'items'=>array(
         array(
             'class'=>'bootstrap.widgets.TbMenu',
-            'htmlOptions'=>array('class'=>'pull-right'),
             'items'=>array(
+                array('label'=>'Work history', 'url'=>array('/site/workhistory')),
                 array('label'=>'Contact', 'url'=>array('/site/contact')),
-                array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
                 array('label'=>'Update status', 'url'=>array('/status/create'), 'visible'=>!Yii::app()->user->isGuest),
                 array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
             ),
@@ -35,7 +32,7 @@
 )); ?>
 
 <div class="container" id="page">
-
+    <a href="<?php echo Yii::app()->createAbsoluteUrl('site/login',array())?>" class="login-link">Login</a>
 	<?php if(isset($this->breadcrumbs)):?>
 		<?php $this->widget('bootstrap.widgets.TbBreadcrumbs', array(
 			'links'=>$this->breadcrumbs,

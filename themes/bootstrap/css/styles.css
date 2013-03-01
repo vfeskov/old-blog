@@ -78,7 +78,27 @@ div.captcha {
 }
 .navbar .brand {
     background: url('../images/logo.png') no-repeat;
-    padding-left:48px;
-    height:18px;
-    margin-left:5px;
+    height: 30px;
+    text-indent: -99999px;
+    padding: 0;
+    width: 34px;
+    margin: 5px;
 }
+.navbar .navbar-inner {
+    background:#fafafa;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.login-link {
+    position:absolute;
+    width:20px;
+    height:20px;
+    top:40px;
+    text-indent: -9999px;
+}
+.login-link:hover{ text-decoration: none; }
