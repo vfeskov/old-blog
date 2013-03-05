@@ -27,6 +27,7 @@ foreach($dataProvider->getData() as $position)
     $dates = 'From ' . date('M Y',strtotime($position->startdate));
     if($position->enddate) $dates .= ' to '. date('M Y',strtotime($position->enddate));
     $positions[] = array(
+        'id'=>$position->id,
         'title'=>$position->title,
         'company'=>$company,
         'summary'=>$position->summary,
@@ -45,4 +46,5 @@ $this->widget('bootstrap.widgets.TbGridView', array(
         array('name'=>'dates', 'header'=>'Dates','htmlOptions'=>array('width'=>'15%')),
     ),
 ));
+
 ?>
