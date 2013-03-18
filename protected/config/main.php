@@ -39,14 +39,17 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
-		/*'urlManager'=>array(
+		'urlManager'=>array(
 			'urlFormat'=>'path',
+            'showScriptName'=>false,
 			'rules'=>array(
+                'workhistory'=>'site/workhistory',
+                'contact'=>'site/contact',
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
-		),*/
+		),
         'db'=>array(
             'class'=>'CDbConnection',
             'connectionString'=>'mysql:host=localhost;dbname=vladimirfeskov.com',

@@ -5,12 +5,10 @@ $this->pageTitle=Yii::app()->name;
 ?>
 
 <?php $this->beginWidget('bootstrap.widgets.TbHeroUnit',array(
-    'heading'=>'Hi there!',
+    'heading'=>Html::model()->findByPk('Homepage herounit heading')->content,
 )); ?>
 
-<p>My name is Vladimir Feskov and I'm a web developer from Ukraine. This site is dedicated to my work.<br/>
-    You can find my <a href="<?php echo $this->createUrl("/site/workhistory")?>">employment history here</a> and some of my short work-related updates below. <br/>
-    Or you can go ahead and <a href="<?php echo $this->createUrl("/site/contact")?>">contact me</a>.</p>
+<?php echo Html::model()->findByPk('Homepage herounit content')->content ?>
 
 <?php $this->endWidget(); ?>
 
