@@ -25,6 +25,7 @@
                 array('label'=>'Work history', 'url'=>array('/site/workhistory')),
                 array('label'=>'Contact', 'url'=>array('/site/contact')),
                 array('label'=>'Update status', 'url'=>array('/status/create'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=>'Manage HTML blocks', 'url'=>array('/html/admin'), 'visible'=>!Yii::app()->user->isGuest),
                 array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
             ),
         ),
@@ -52,6 +53,18 @@
 	</div><!-- footer -->
 
 </div><!-- page -->
+<script type="text/javascript">
 
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-39039659-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
 </body>
 </html>

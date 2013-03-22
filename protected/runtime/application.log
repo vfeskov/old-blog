@@ -1233,3 +1233,281 @@ Stack trace:
 REQUEST_URI=/index.php?r=site/positions&update=1
 HTTP_REFERER=http://vladimirfeskov.com.local/index.php?r=site/workhistory
 ---
+2013/03/18 23:01:21 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in Z:\home\vladimirfeskov.com.local\www\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 Z:\home\vladimirfeskov.com.local\www\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 Z:\home\vladimirfeskov.com.local\www\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\vladimirfeskov.com.local\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\vladimirfeskov.com.local\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\vladimirfeskov.com.local\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\vladimirfeskov.com.local\www\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\vladimirfeskov.com.local\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php(282): CController->run('view')
+#8 Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php(141): CWebApplication->runController('html/view')
+#9 Z:\home\vladimirfeskov.com.local\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 Z:\home\vladimirfeskov.com.local\www\index.php(12): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=html/view&id=Homepage+herounit+heading
+HTTP_REFERER=http://vladimirfeskov.com.local/index.php?r=html/create
+---
+2013/03/19 00:38:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 Z:\home\vladimirfeskov.com.local\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\vladimirfeskov.com.local\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://vladimirfeskov.com.local/site/workhistory
+---
+2013/03/19 00:38:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 Z:\home\vladimirfeskov.com.local\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\vladimirfeskov.com.local\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://vladimirfeskov.com.local/site/contact
+---
+2013/03/19 00:38:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 Z:\home\vladimirfeskov.com.local\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\vladimirfeskov.com.local\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://vladimirfeskov.com.local/status/create
+---
+2013/03/19 00:38:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 Z:\home\vladimirfeskov.com.local\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\vladimirfeskov.com.local\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://vladimirfeskov.com.local/site/contact
+---
+2013/03/19 00:38:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 Z:\home\vladimirfeskov.com.local\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\vladimirfeskov.com.local\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://vladimirfeskov.com.local/site/workhistory
+---
+2013/03/19 00:38:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 Z:\home\vladimirfeskov.com.local\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\vladimirfeskov.com.local\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://vladimirfeskov.com.local/status/create
+---
+2013/03/19 00:38:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 Z:\home\vladimirfeskov.com.local\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\vladimirfeskov.com.local\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://vladimirfeskov.com.local/site/workhistory
+---
+2013/03/19 00:38:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 Z:\home\vladimirfeskov.com.local\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\vladimirfeskov.com.local\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://vladimirfeskov.com.local/site/contact
+---
+2013/03/19 00:38:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 Z:\home\vladimirfeskov.com.local\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\vladimirfeskov.com.local\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://vladimirfeskov.com.local/site/workhistory
+---
+2013/03/19 00:38:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 Z:\home\vladimirfeskov.com.local\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\vladimirfeskov.com.local\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://vladimirfeskov.com.local/site/contact
+---
+2013/03/19 00:38:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 Z:\home\vladimirfeskov.com.local\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\vladimirfeskov.com.local\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://vladimirfeskov.com.local/status/create
+---
+2013/03/19 00:38:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 Z:\home\vladimirfeskov.com.local\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\vladimirfeskov.com.local\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://vladimirfeskov.com.local/html/admin
+---
+2013/03/19 00:38:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 Z:\home\vladimirfeskov.com.local\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\vladimirfeskov.com.local\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://vladimirfeskov.com.local/site/workhistory
+---
+2013/03/19 00:40:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 Z:\home\vladimirfeskov.com.local\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\vladimirfeskov.com.local\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://vladimirfeskov.com.local/
+---
+2013/03/19 00:40:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 Z:\home\vladimirfeskov.com.local\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\vladimirfeskov.com.local\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://vladimirfeskov.com.local/workhistory
+---
+2013/03/19 00:40:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 Z:\home\vladimirfeskov.com.local\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\vladimirfeskov.com.local\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://vladimirfeskov.com.local/workhistory
+---
+2013/03/19 00:40:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 Z:\home\vladimirfeskov.com.local\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\vladimirfeskov.com.local\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://vladimirfeskov.com.local/contact
+---
+2013/03/19 00:40:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 Z:\home\vladimirfeskov.com.local\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\vladimirfeskov.com.local\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://vladimirfeskov.com.local/
+---
+2013/03/19 00:40:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 Z:\home\vladimirfeskov.com.local\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\vladimirfeskov.com.local\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://vladimirfeskov.com.local/workhistory
+---
+2013/03/19 00:40:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 Z:\home\vladimirfeskov.com.local\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\vladimirfeskov.com.local\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://vladimirfeskov.com.local/contact
+---
+2013/03/19 00:40:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 Z:\home\vladimirfeskov.com.local\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\vladimirfeskov.com.local\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://vladimirfeskov.com.local/workhistory
+---
+2013/03/19 00:40:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 Z:\home\vladimirfeskov.com.local\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\vladimirfeskov.com.local\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://vladimirfeskov.com.local/contact
+---
+2013/03/19 00:40:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 Z:\home\vladimirfeskov.com.local\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\vladimirfeskov.com.local\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://vladimirfeskov.com.local/workhistory
+---
+2013/03/19 00:40:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 Z:\home\vladimirfeskov.com.local\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\vladimirfeskov.com.local\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://vladimirfeskov.com.local/contact
+---
+2013/03/19 00:40:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 Z:\home\vladimirfeskov.com.local\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\vladimirfeskov.com.local\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://vladimirfeskov.com.local/
+---
+2013/03/19 00:40:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 Z:\home\vladimirfeskov.com.local\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\vladimirfeskov.com.local\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://vladimirfeskov.com.local/workhistory
+---
+2013/03/19 00:40:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 Z:\home\vladimirfeskov.com.local\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\vladimirfeskov.com.local\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://vladimirfeskov.com.local/
+---
+2013/03/19 00:40:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 Z:\home\vladimirfeskov.com.local\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\vladimirfeskov.com.local\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://vladimirfeskov.com.local/site/login
+---
+2013/03/19 00:47:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\vladimirfeskov.com.local\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 Z:\home\vladimirfeskov.com.local\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\vladimirfeskov.com.local\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://vladimirfeskov.com.local/site/login
+---
