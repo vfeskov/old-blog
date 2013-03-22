@@ -102,3 +102,6 @@ div.captcha {
     text-indent: -9999px;
 }
 .login-link:hover{ text-decoration: none; }
+pre {
+    background:transparent;
+}

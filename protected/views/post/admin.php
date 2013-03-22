@@ -6,7 +6,7 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'List Post','url'=>array('index')),
-	array('label'=>'Create Post','url'=>array('create')),
+	array('label'=>'Create Post','url'=>array('create'),'visible'=>!Yii::app()->user->isGuest),
 );
 
 Yii::app()->clientScript->registerScript('search', "

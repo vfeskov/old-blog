@@ -4,8 +4,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create Post','url'=>array('create')),
-	array('label'=>'Manage Post','url'=>array('admin')),
+	array('label'=>'Create Post','url'=>array('create'),'visible'=>!Yii::app()->user->isGuest),
+	array('label'=>'Manage Post','url'=>array('admin'),'visible'=>!Yii::app()->user->isGuest),
 );
 ?>
 

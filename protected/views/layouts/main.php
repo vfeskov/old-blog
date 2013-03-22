@@ -13,13 +13,10 @@
 	<?php Yii::app()->bootstrap->register(); ?>
 
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/styles.css" />
-    <link rel="stylesheet" href="http://yandex.st/highlightjs/7.3/styles/default.min.css">
+    <link rel="stylesheet" href="http://yandex.st/highlightjs/7.3/styles/idea.min.css">
     <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
-    <script>
-        jQuery(function(){
-            $('pre').each(function(i, e) {hljs.highlightBlock(e)});
-        });
-    </script>
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/wysiwyg.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
@@ -31,6 +28,7 @@
             'items'=>array(
                 array('label'=>'Work history', 'url'=>array('/site/workhistory')),
                 array('label'=>'Contact', 'url'=>array('/site/contact')),
+                array('label'=>'Post', 'url'=>array('/post/create'), 'visible'=>!Yii::app()->user->isGuest),
                 array('label'=>'Update status', 'url'=>array('/status/create'), 'visible'=>!Yii::app()->user->isGuest),
                 array('label'=>'Manage HTML blocks', 'url'=>array('/html/admin'), 'visible'=>!Yii::app()->user->isGuest),
                 array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)

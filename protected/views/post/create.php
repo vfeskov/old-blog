@@ -6,7 +6,7 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'List Post','url'=>array('index')),
-	array('label'=>'Manage Post','url'=>array('admin')),
+	array('label'=>'Manage Post','url'=>array('admin'),'visible'=>!Yii::app()->user->isGuest),
 );
 ?>
 
