@@ -1,8 +1,5 @@
-./protected/config/main.php
-./protected/config/console.php
-./protected/config/test.php
-./assets/*
-./protected/runtime/*
-./demos/*
-./.idea
-./.idea/*
+protected/config/*
+assets/*
+protected/runtime/*
+demos/*
+.idea/*
