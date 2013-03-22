@@ -4,3 +4,5 @@
 ./assets/*
 ./protected/runtime/*
 ./demos/*
+./.idea
+./.idea/*
