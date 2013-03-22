@@ -2,7 +2,7 @@
 $this->pageTitle=Yii::app()->name . ' - '.$model->title;
 $this->breadcrumbs=array(
 	'Posts'=>array('index'),
-	$model->title,
+	$model->id,
 );
 
 $this->menu=array(

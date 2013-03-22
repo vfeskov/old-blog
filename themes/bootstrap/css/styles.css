@@ -105,3 +105,6 @@ div.captcha {
 pre {
     background:transparent;
 }
+.post-list .summary {
+    display:none;
+}

@@ -16,8 +16,8 @@ vfwysiwig.wrapWithTag = function(){
     vfwysiwig.wrap.call(this,'<'+tag+'>','</'+tag+'>');
 }
 jQuery(function(){
-    if(jQuery('textarea').length){
-        jQuery('textarea').wrap('<div class="textarea-wrapper" />');
+    if(jQuery('textarea.with-html').length){
+        jQuery('textarea.with-html').wrap('<div class="textarea-wrapper" />');
         var html = '<a class="wrap-code" onclick="vfwysiwig.wrapCode.call(this);return false;" href="#">Wrap code</a>&nbsp;<select class="wrap-code-lang" onchange="jQuery(this).closest(\'.textarea-wrapper\').find(\'textarea\').focus()">';
         var langs = ["php","xml","javascript","css","json","python","profile","ruby","perl","scala","go","markdown","django","coffeescript","actionscript","vbscript","http","lua","applescript","delphi","java","cpp","objectivec","vala","cs","d","rsl","rib","mel","glsl","sql","smalltalk","lisp","clojure","ini","apache","nginx","diff","dos","bash","cmake","axapta","1c","avrasm","vhdl","parser3","tex","brainfuck","haskell","erlang","erlang-repl","rust","matlab","r"];
         for(var i=0;i<langs.length;i++)html+='<option>'+langs[i]+'</option>';
@@ -26,6 +26,6 @@ jQuery(function(){
         var tags = ['p','h1','h2','h3','h4','strong','em'];
         for(var i=0;i<tags.length;i++)html+='<option>'+tags[i]+'</option>';
         html += '</select>';
-        jQuery('textarea').before(html);
+        jQuery('textarea.with-html').before(html);
     }
 });

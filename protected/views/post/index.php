@@ -11,7 +11,9 @@ $this->menu=array(
 
 <h1>Posts</h1>
 
+<div class="post-list">
 <?php $this->widget('bootstrap.widgets.TbListView',array(
 	'dataProvider'=>$dataProvider,
 	'itemView'=>'_view',
 )); ?>
+</div>
