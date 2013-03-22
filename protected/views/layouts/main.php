@@ -13,6 +13,13 @@
 	<?php Yii::app()->bootstrap->register(); ?>
 
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/styles.css" />
+    <link rel="stylesheet" href="http://yandex.st/highlightjs/7.3/styles/default.min.css">
+    <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
+    <script>
+        jQuery(function(){
+            $('pre').each(function(i, e) {hljs.highlightBlock(e)});
+        });
+    </script>
 </head>
 
 <body>
