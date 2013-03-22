@@ -1511,3 +1511,21 @@ Stack trace:
 REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
 HTTP_REFERER=http://vladimirfeskov.com.local/site/login
 ---
+2013/03/22 16:52:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in C:\Users\vfeskov\PhpstormProjects\vladimirfeskov.com\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\vfeskov\PhpstormProjects\vladimirfeskov.com\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 C:\Users\vfeskov\PhpstormProjects\vladimirfeskov.com\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\Users\vfeskov\PhpstormProjects\vladimirfeskov.com\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://vladimirfeskov.com.local/
+---
+2013/03/22 16:54:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in C:\Users\vfeskov\PhpstormProjects\vladimirfeskov.com\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\vfeskov\PhpstormProjects\vladimirfeskov.com\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 C:\Users\vfeskov\PhpstormProjects\vladimirfeskov.com\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\Users\vfeskov\PhpstormProjects\vladimirfeskov.com\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://vladimirfeskov.com.local/?r=gii
+---
