@@ -1,5 +1,5 @@
-./protected/config/*
-./assets/*
-./protected/runtime/*
-./demos/*
-./.idea/*
+protected/config/*
+assets/*
+protected/runtime/*
+demos/*
+.idea/*
