@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2b7d19c-0161-4f79-b644-e96e458a83d7" name="Default" comment="" />
+    <list default="true" id="a2b7d19c-0161-4f79-b644-e96e458a83d7" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+    </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="a2b7d19c-0161-4f79-b644-e96e458a83d7" time="1363961503583" ignored="false" />
@@ -46,7 +48,7 @@
       <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="9" selection-start="147" selection-end="147" vertical-scroll-proportion="0.13662457">
+            <state line="1" column="0" selection-start="21" selection-end="21" vertical-scroll-proportion="0.019517796">
               <folding />
             </state>
           </provider>
@@ -522,7 +524,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="9" selection-start="147" selection-end="147" vertical-scroll-proportion="0.13662457">
+        <state line="1" column="0" selection-start="21" selection-end="21" vertical-scroll-proportion="0.019517796">
           <folding />
         </state>
       </provider>
