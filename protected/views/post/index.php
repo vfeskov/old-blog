@@ -9,7 +9,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>Posts</h1>
+<h1>My posts</h1>
 
 <div class="post-list">
 <?php $this->widget('bootstrap.widgets.TbListView',array(

@@ -2,7 +2,7 @@
 $this->pageTitle=Yii::app()->name . ' - '.$model->title;
 $this->breadcrumbs=array(
 	'Posts'=>array('index'),
-	$model->id,
+	'#'.$model->id,
 );
 
 $this->menu=array(
@@ -17,3 +17,14 @@ $this->menu=array(
 <h1><?php echo $model->title?></h1>
 <p><em><?php echo Yii::app()->dateFormatter->formatDateTime($model->date, 'long', 'long'); ?></em></p>
 <?php echo $model->content?>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'vladimirfeskov';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>

@@ -46,7 +46,8 @@ class PostController extends Controller
 	 */
 	public function actionView($id)
 	{
-		$this->render('view',array(
+        $this->layout='//layouts/column1';
+        $this->render('view',array(
 			'model'=>$this->loadModel($id),
 		));
 	}
@@ -123,7 +124,8 @@ class PostController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Post');
+        $this->layout='//layouts/column1';
+        $dataProvider=new CActiveDataProvider('Post');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
