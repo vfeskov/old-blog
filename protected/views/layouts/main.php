@@ -39,11 +39,11 @@
 
 <div class="container" id="page">
     <a href="<?php echo Yii::app()->createAbsoluteUrl('site/login',array())?>" class="login-link">Login</a>
-	<?php if(isset($this->breadcrumbs)):?>
+	<?php /*if(isset($this->breadcrumbs)):?>
 		<?php $this->widget('bootstrap.widgets.TbBreadcrumbs', array(
 			'links'=>$this->breadcrumbs,
 		)); ?><!-- breadcrumbs -->
-	<?php endif?>
+	<?php endif*/?>
 
 	<?php echo $content; ?>
 
