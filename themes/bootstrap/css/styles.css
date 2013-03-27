@@ -109,3 +109,6 @@ pre {
 .post-list .summary {
     display:none;
 }
+a {
+    text-decoration: underline;
+}
