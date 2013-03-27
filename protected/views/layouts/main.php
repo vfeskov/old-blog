@@ -9,6 +9,7 @@
           href="<?php echo Yii::app()->theme->baseUrl; ?>/images/favicon.png">
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+	<meta name="description" content="<?php echo CHtml::encode($this->metaDescription); ?>" />
 
 	<?php Yii::app()->bootstrap->register(); ?>
 
