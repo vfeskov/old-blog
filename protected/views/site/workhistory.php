@@ -2,12 +2,11 @@
     /* @var $this SiteController */
     /* @var $model LinkedIn */
 
-    $this->pageTitle=Yii::app()->name . ' - Work history';
-    $this->breadcrumbs=array(
-        'Work history',
-    );
+    $this->pageTitle= 'About me - '.Yii::app()->name ;
     ?>
-<h1>My employment history</h1>
+<h1>About me</h1>
+<p>...</p>
+<h3>My work history</h3>
 <?php if(Yii::app()->user->hasFlash('positions')): ?>
 
 <?php $this->widget('bootstrap.widgets.TbAlert', array(
@@ -19,32 +18,22 @@
 <?php echo CHtml::link('Update work history', $this->createUrl('/site/workhistory',array('update'=>1))) ?>
 
 <?php endif?>
-
+<ol class="positions-list">
 <?php $positions = array();
+
 foreach($dataProvider->getData() as $position)
 {
-    $company = '<a href="#" onclick="return false;" rel="tooltip" title="'.$position->companyindustry.' '.$position->companysize.'">'.$position->companyname.'</a>';
-    $dates = 'From ' . date('M Y',strtotime($position->startdate));
-    if($position->enddate) $dates .= ' to '. date('M Y',strtotime($position->enddate));
-    $positions[] = array(
-        'id'=>$position->id,
-        'title'=>$position->title,
-        'company'=>$company,
-        'summary'=>$position->summary,
-        'dates'=>$dates,
-    );
+    $dates = date('F Y',strtotime($position->startdate));
+    if($position->enddate) $dates .= ' - '. date('F Y',strtotime($position->enddate));
+    else $dates .= ' - Present';
+    echo '<li>';
+    echo '<p>';
+    echo "<span class=\"position\">$position->title at ";
+    echo "<a href=\"$position->companyurl\" target=\"_blank\">$position->companyname</a></span><br/>";
+    echo "<span class=\"dates\">$dates</span><br/>";
+    echo "<span class=\"summary\">$position->summary</span>";
+    echo '</p>';
+    echo '</li>';
 }
-$gridDataProvider = new CArrayDataProvider($positions);
-$this->widget('bootstrap.widgets.TbGridView', array(
-    'type'=>'bordered',
-    'dataProvider'=>$gridDataProvider,
-    'template'=>"{items}",
-    'columns'=>array(
-        array('name'=>'title', 'header'=>'Title', 'htmlOptions'=>array('width'=>'15%')),
-        array('name'=>'company', 'header'=>'Company', 'type'=>'raw', 'htmlOptions'=>array('width'=>'10%')),
-        array('name'=>'summary', 'header'=>'Summary'),
-        array('name'=>'dates', 'header'=>'Dates','htmlOptions'=>array('width'=>'15%')),
-    ),
-));
-
 ?>
+</ol>

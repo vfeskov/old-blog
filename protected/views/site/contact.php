@@ -3,7 +3,7 @@
 /* @var $model ContactForm */
 /* @var $form TbActiveForm */
 
-$this->pageTitle=Yii::app()->name . ' - Contact me';
+$this->pageTitle='Contact me - '.Yii::app()->name ;
 $this->breadcrumbs=array(
 	'Contact',
 );

@@ -5,6 +5,8 @@
 
 	<?php echo $form->textFieldRow($model,'id',array('class'=>'span5','maxlength'=>255)); ?>
 
+    <?php echo $form->textFieldRow($model,'key',array('class'=>'span5','maxlength'=>255)); ?>
+
 	<?php echo $form->textAreaRow($model,'content',array('rows'=>6, 'cols'=>50, 'class'=>'span8')); ?>
 
 	<div class="form-actions">

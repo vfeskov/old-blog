@@ -1,5 +1,5 @@
 <?php
-$this->pageTitle=Yii::app()->name . ' - '.$model->title;
+$this->pageTitle=$model->title.' - '.Yii::app()->name;
 $this->metaDescription=$model->description;
 $this->breadcrumbs=array(
 	'Posts'=>array('index'),

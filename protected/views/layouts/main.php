@@ -10,6 +10,7 @@
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 	<meta name="description" content="<?php echo CHtml::encode($this->metaDescription); ?>" />
+    <meta name="author" content="Vladimir Feskov">
 
 	<?php Yii::app()->bootstrap->register(); ?>
 
@@ -22,13 +23,12 @@
 
 <body>
 <?php $this->widget('bootstrap.widgets.TbNavbar',array(
-    'collapse'=>true,
     'items'=>array(
         array(
             'class'=>'bootstrap.widgets.TbMenu',
             'items'=>array(
                 array('label'=>'Posts', 'url'=>array('/post/index')),
-                array('label'=>'Work history', 'url'=>array('/site/workhistory')),
+                array('label'=>'About me', 'url'=>array('/site/workhistory')),
                 array('label'=>'Contact', 'url'=>array('/site/contact')),
                 array('label'=>'Update status', 'url'=>array('/status/create'), 'visible'=>!Yii::app()->user->isGuest),
                 array('label'=>'Manage HTML blocks', 'url'=>array('/html/admin'), 'visible'=>!Yii::app()->user->isGuest),
@@ -56,6 +56,8 @@
         <br />
         <?php endif;?>
         <?php echo Yii::powered(); ?>
+        <br />
+        &copy; 2013 Vladimir Feskov
 	</div><!-- footer -->
 
 </div><!-- page -->

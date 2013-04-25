@@ -42,11 +42,11 @@ class Position extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('title, summary, startdate, enddate, companyname, companysize, companyindustry', 'required'),
-			array('title, companyname, companysize, companyindustry', 'length', 'max'=>100),
+			array('title, companyname, companysize, companyindustry, companyurl', 'length', 'max'=>100),
 			array('startdate, enddate', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, title, summary, startdate, enddate, companyname, companysize, companyindustry', 'safe', 'on'=>'search'),
+			array('id, title, summary, startdate, enddate, companyname, companysize, companyindustry, companyurl', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -75,6 +75,7 @@ class Position extends CActiveRecord
 			'companyname' => 'Companyname',
 			'companysize' => 'Companysize',
 			'companyindustry' => 'Companyindustry',
+			'companyurl' => 'Companyurl',
 		);
 	}
 
@@ -97,6 +98,7 @@ class Position extends CActiveRecord
 		$criteria->compare('companyname',$this->companyname,true);
 		$criteria->compare('companysize',$this->companysize,true);
 		$criteria->compare('companyindustry',$this->companyindustry,true);
+		$criteria->compare('companyurl',$this->companyurl,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

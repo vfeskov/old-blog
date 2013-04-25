@@ -7,6 +7,8 @@
 
 	<?php echo $form->textFieldRow($model,'title',array('class'=>'span5','maxlength'=>255)); ?>
 
+    <?php echo $form->textFieldRow($model,'slug',array('class'=>'span5','maxlength'=>255)); ?>
+
 	<?php echo $form->textAreaRow($model,'content',array('rows'=>6, 'cols'=>50, 'class'=>'span8')); ?>
 
 	<?php echo $form->textFieldRow($model,'date',array('class'=>'span5')); ?>

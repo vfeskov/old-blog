@@ -33,7 +33,7 @@ class PostController extends Controller
 	{
 		return array(
             array('allow',  // allow all users to perform 'index' and 'view' actions
-                'actions'=>array('index','view'),
+                'actions'=>array('index','view','viewBySlug'),
                 'users'=>array('*'),
             ),
             array('allow',  // allow all users to perform 'index' and 'view' actions
@@ -52,10 +52,19 @@ class PostController extends Controller
 	 */
 	public function actionView($id)
 	{
+
         $this->render('view',array(
 			'model'=>$this->loadModel($id),
 		));
 	}
+
+    public function actionViewBySlug($slug)
+    {
+
+        $this->render('view',array(
+            'model'=>$this->loadModelBySlug($slug),
+        ));
+    }
 
 	/**
 	 * Creates a new model.
@@ -162,6 +171,16 @@ class PostController extends Controller
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
 	}
+
+    public function loadModelBySlug($slug)
+    {
+        $model=Post::model();
+        $model->slug = $slug;
+        $model = current($model->search()->getData());
+        if($model===null)
+            throw new CHttpException(404,'The requested page does not exist.');
+        return $model;
+    }
 
 	/**
 	 * Performs the AJAX validation.

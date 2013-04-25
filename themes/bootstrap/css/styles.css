@@ -75,7 +75,8 @@ div.captcha {
     }
 }
 .hero-unit {
-    padding:30px;
+    padding:0;
+    background: none;
 }
 .navbar .brand {
     background: url('../images/logo.png') no-repeat;
@@ -112,3 +113,7 @@ pre {
 a {
     text-decoration: underline;
 }
+.positions-list li {margin-bottom:20px;}
+.positions-list .dates {}
+.positions-list .position { font-size: 1.2em;}
+.positions-list .summary { display:block; }

@@ -37,12 +37,12 @@ class Post extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title, description, content', 'required'),
-			array('title', 'length', 'max'=>255),
+			array('title, slug, description, content', 'required'),
+			array('title, slug', 'length', 'max'=>255),
 			array('description', 'length', 'max'=>500),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, title, description, content, date', 'safe', 'on'=>'search'),
+			array('id, title, slug, description, content, date', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -65,6 +65,7 @@ class Post extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'title' => 'Title',
+			'slug' => 'Slug',
 			'description' => 'Description',
 			'content' => 'Content',
 			'date' => 'Date',
@@ -84,6 +85,7 @@ class Post extends CActiveRecord
 
 		$criteria->compare('id',$this->id,true);
 		$criteria->compare('title',$this->title,true);
+		$criteria->compare('slug',$this->slug,true);
 		$criteria->compare('description',$this->description,true);
 		$criteria->compare('content',$this->content,true);
 		$criteria->compare('date',$this->date,true);
