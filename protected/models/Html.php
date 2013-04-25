@@ -5,6 +5,7 @@
  *
  * The followings are the available columns in table 'html':
  * @property string $id
+ * @property string $key
  * @property string $content
  */
 class Html extends CActiveRecord
@@ -35,11 +36,11 @@ class Html extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id, content', 'required'),
-			array('id', 'length', 'max'=>255),
+			array('key, content', 'required'),
+			array('key', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, content', 'safe', 'on'=>'search'),
+			array('id, key, content', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -61,6 +62,7 @@ class Html extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
+			'key' => 'Key',
 			'content' => 'Content',
 		);
 	}
@@ -76,11 +78,19 @@ class Html extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('id',$this->id,true);
-		$criteria->compare('content',$this->content,true);
+		$criteria->compare('t.id',$this->id,true);
+		$criteria->compare('t.key',$this->key,true);
+		$criteria->compare('t.content',$this->content,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
 	}
+    public function findByKey($key)
+    {
+        $this->key = $key;
+        $dataProvider = $this->search();
+        $data = $dataProvider->getData();
+        return $data[0];
+    }
 }

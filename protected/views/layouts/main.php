@@ -9,17 +9,15 @@
           href="<?php echo Yii::app()->theme->baseUrl; ?>/images/favicon.png">
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+	<meta name="description" content="<?php echo CHtml::encode($this->metaDescription); ?>" />
 
 	<?php Yii::app()->bootstrap->register(); ?>
 
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/styles.css" />
-    <link rel="stylesheet" href="http://yandex.st/highlightjs/7.3/styles/default.min.css">
+    <link rel="stylesheet" href="http://yandex.st/highlightjs/7.3/styles/idea.min.css">
     <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
-    <script>
-        jQuery(function(){
-            $('pre').each(function(i, e) {hljs.highlightBlock(e)});
-        });
-    </script>
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/wysiwyg.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
@@ -29,6 +27,7 @@
         array(
             'class'=>'bootstrap.widgets.TbMenu',
             'items'=>array(
+                array('label'=>'Posts', 'url'=>array('/post/index')),
                 array('label'=>'Work history', 'url'=>array('/site/workhistory')),
                 array('label'=>'Contact', 'url'=>array('/site/contact')),
                 array('label'=>'Update status', 'url'=>array('/status/create'), 'visible'=>!Yii::app()->user->isGuest),
@@ -41,11 +40,11 @@
 
 <div class="container" id="page">
     <a href="<?php echo Yii::app()->createAbsoluteUrl('site/login',array())?>" class="login-link">Login</a>
-	<?php if(isset($this->breadcrumbs)):?>
+	<?php /*if(isset($this->breadcrumbs)):?>
 		<?php $this->widget('bootstrap.widgets.TbBreadcrumbs', array(
 			'links'=>$this->breadcrumbs,
 		)); ?><!-- breadcrumbs -->
-	<?php endif?>
+	<?php endif*/?>
 
 	<?php echo $content; ?>
 

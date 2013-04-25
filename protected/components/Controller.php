@@ -20,4 +20,26 @@ class Controller extends CController
 	 * for more details on how to specify this property.
 	 */
 	public $breadcrumbs=array();
+
+    private $_metaDescription;
+    /**
+     * @return string the meta description. Defaults to page title.
+     */
+    public function getMetaDescription()
+    {
+        if($this->_metaDescription!==null)
+            return $this->_metaDescription;
+        else
+        {
+            return $this->pageTitle;
+        }
+    }
+
+    /**
+     * @param string $value the meta description.
+     */
+    public function setMetaDescription($value)
+    {
+        $this->_metaDescription=$value;
+    }
 }

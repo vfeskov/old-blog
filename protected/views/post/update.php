@@ -7,9 +7,9 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'List Post','url'=>array('index')),
-	array('label'=>'Create Post','url'=>array('create')),
+	array('label'=>'Create Post','url'=>array('create'),'visible'=>!Yii::app()->user->isGuest),
 	array('label'=>'View Post','url'=>array('view','id'=>$model->id)),
-	array('label'=>'Manage Post','url'=>array('admin')),
+	array('label'=>'Manage Post','url'=>array('admin'),'visible'=>!Yii::app()->user->isGuest),
 );
 ?>
 

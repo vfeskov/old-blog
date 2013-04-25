@@ -6,9 +6,15 @@ class PostController extends Controller
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
-	public $layout='//layouts/column2';
+	public $layout = '//layouts/column1';
 
-	/**
+    public function __construct($id,$module=null)
+    {
+        parent::__construct($id,$module);
+        if(!Yii::app()->user->isGuest) $this->layout = '//layouts/column2';
+    }
+
+    /**
 	 * @return array action filters
 	 */
 	public function filters()
@@ -46,7 +52,7 @@ class PostController extends Controller
 	 */
 	public function actionView($id)
 	{
-		$this->render('view',array(
+        $this->render('view',array(
 			'model'=>$this->loadModel($id),
 		));
 	}
@@ -123,7 +129,7 @@ class PostController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Post');
+        $dataProvider=new CActiveDataProvider('Post');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));

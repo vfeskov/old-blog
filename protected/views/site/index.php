@@ -5,10 +5,10 @@ $this->pageTitle=Yii::app()->name;
 ?>
 
 <?php $this->beginWidget('bootstrap.widgets.TbHeroUnit',array(
-    'heading'=>Html::model()->findByPk('Homepage herounit heading')->content,
+    'heading'=>Html::model()->findByKey('Homepage herounit heading')->content,
 )); ?>
 
-<?php echo Html::model()->findByPk('Homepage herounit content')->content ?>
+<?php echo Html::model()->findByKey('Homepage herounit content')->content ?>
 
 <?php $this->endWidget(); ?>
 
