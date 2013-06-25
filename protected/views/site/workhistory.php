@@ -7,10 +7,10 @@
 <h1>About me</h1>
 
 <p>I'm an ambitious guy striving for perfection, I like learning and trying new things. I don't mind being bad at cooking for example, but my code has to be flawless. I spend a lot of time refactoring and I really enjoy my work. </p>
-<p>I've being in love with programming since I was a kid and my dad bought us a computer. I participated in and won several programming competitions in school, I was really into Visual Basic and Delphi those days. In university I skipped a lot of classes but I always did my programming assignments. I learnt Java, C++ and Assembler there.</p>
+<p>I've being in love with programming since I was a kid. I won several programming competitions in school, I was really into Visual Basic and Delphi those days. In university I skipped a lot of classes but I always did my programming assignments. I learnt Java, C++ and Assembler there.</p>
 <p>I started working when I was still getting my education, my first employer gave me a great training in WordPress, and since then Web technologies became my thing.</p>
-<p>Almost three years later I felt like I was perfect because the tasks were easy and I did them flawlessly. Then a really great guy, that helped me a lot in the beginning, left my employer for another IT company and I tried following him, but failed the interview. It turned out I wasn't as perfect as I thought. </p>
-<p>I had to change my job position if I wanted to improve, so I did, and I haven't regreted it since. The new place was great, the tasks were difficult and I felt improvement. But all projects were on Magento and it started to get boring. The main reason I left and joined DataArt though was the security, I really felt confident in such a big company and the promised bonuses were great. </p>
+<p>Two years later I felt like I was perfect because the tasks were easy and I did them flawlessly. Then my coworker, a really great guy that helped me a lot in the beginning, left my employer for another IT company and I tried following him, but failed the interview. It turned out I wasn't as perfect as I thought. </p>
+<p>I would've had to change my job position if I wanted to improve, so I did, and I still have no regrets about it. The new place was great, the tasks were difficult and I felt improvement. But all projects were on Magento and it got boring. The main reason I left and joined DataArt though was the security, I really felt confident in such a big company and the promised bonuses were great. </p>
 <p>So DataArt is my current employer and I enjoy everything here.</p>
 
 <h3>My work history</h3>
