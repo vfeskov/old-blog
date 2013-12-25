@@ -6,20 +6,10 @@
     ?>
 <h1>About me</h1>
 
-<p>I've being developing programs since school and I've always enjoyed it. You can find more info on technologies that I use at my <a href="http://ua.linkedin.com/pub/vladimir-feskov/54/498/297" target="_blank">Linkedin</a> profile.</p>
+<p>I've been developing programs since school and I've always enjoyed it. You can find more info on technologies that I use at my <a href="http://ua.linkedin.com/pub/vladimir-feskov/54/498/297" target="_blank">Linkedin</a> profile.</p>
 
 <h3>My work history</h3>
-<?php if(Yii::app()->user->hasFlash('positions')): ?>
 
-<?php $this->widget('bootstrap.widgets.TbAlert', array(
-        'alerts'=>array('positions'),
-    )); ?>
-
-<?php elseif(!Yii::app()->user->isGuest): ?>
-
-<?php echo CHtml::link('Update work history', $this->createUrl('/site/workhistory',array('update'=>1))) ?>
-
-<?php endif?>
 <ol class="positions-list">
 <?php $positions = array();
 
